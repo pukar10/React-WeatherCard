@@ -1,6 +1,6 @@
 import React from 'react';
 
-const location = () => {
+const Location = () => {
 
     const locationStyle = {
         textAlign: 'center'
@@ -22,4 +22,4 @@ const location = () => {
      );
 }
  
-export default location;
+export default Location;

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Icon = (props) => {
     
     const iconStyle = {
@@ -8,10 +7,10 @@ const Icon = (props) => {
     };
 
     return ( 
-        <Icon 
+        <img 
         className="icon"
         style={iconStyle} 
-        src="img/cloud.png" 
+        src="./img/cloud.png" 
         alt="Error"
         />
      );
