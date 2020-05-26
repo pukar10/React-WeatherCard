@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Location = () => {
+const Location = ({ city, country }) => {
 
     const locationStyle = {
         textAlign: 'center'
@@ -15,9 +15,13 @@ const Location = () => {
     };
 
     return ( 
-        <div className="location" style={locationStyle}>
-            <h1 className='city' style={cityStyle}>Fairfax</h1>
-            <h3 className='state' style={stateStyle}>VA</h3>
+        <div style={locationStyle}>
+            <h1 className='city' style={cityStyle}>
+                {city}
+            </h1>
+            <h3 className='Country' style={stateStyle}>
+                {country}
+            </h3>
         </div>
      );
 }
