@@ -4,6 +4,17 @@ import WeatherCard from './comps/WeatherCard/component';
 
 function App() {
 
+  const data = async() => {
+    let res = ''
+    const apiReq = await fetch("api.openweathermap.org/data/2.5/weather?q=London&units=imperial&appid=55fcdeab2e9aea8e1dab232f9c78a90c")
+      .then(res => res.json())
+    return res;
+  };
+  
+  data().then(res => {
+    console.log("Name: " + res.name)
+  })
+
   const appStyle = {
     margin: `0 auto`,
     width: '900px',
